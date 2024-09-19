@@ -1,0 +1,199 @@
+/* ==UserStyle==
+@name           Tokopedia Dark Mode
+@namespace      github.com/flumiie/Tokopedia-Dark-Mode
+@version        1.0.0
+@description    Dark mode for Tokopedia.com
+@author         flumi
+==/UserStyle== */
+@-moz-document domain("tokopedia.com") {
+  * {
+    scrollbar-color: #006f3c transparent;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  div {
+    color: #ddd !important;
+  }
+  a:hover,
+  button:hover p {
+    color: #03ac0e !important;
+  }
+  i,
+  svg {
+    filter: saturate(5) brightness(5) hue-rotate(45deg);
+  }
+  [data-unify="ProgressBar"] > div > div {
+    background: #fff !important;
+  }
+  [data-unify="ProgressBar"] [role="progressbar"] {
+    background: #03ac0e !important;
+  }
+  #pdp_comp-review div:not([role="tooltip"]) > [class="unf-icon"],
+  #content-Rating [class="unf-icon"],
+  [title="jumlah rating"] [class="unf-icon"],
+  [data-testid="icnStarRating"] [class="unf-icon"] {
+    fill: #ffc400 !important;
+    filter: hue-rotate(0deg);
+  }
+  [data-unify="Modal"],
+  #header-main-wrapper,
+  #header-main-wrapper > div,
+  .e1v32nag0,
+  .css-ufaufa,
+  [data-testid="initialStateDropdown"],
+  [data-unify="Dropdown"],
+  [data-unify="Select"],
+  [data-unify="Footer"],
+  [data-testid="cartOverlayHeader"] div,
+  [data-testid="btnHeaderNotification"] div,
+  [data-testid="btnHeaderInbox"] div,
+  [data-testid="btnHeaderMyshop"] > div:nth-child(2),
+  [data-testid="btnHeaderMyProfile"] > div:nth-child(2) > div,
+  [data-testid="divPlaceholder"] div,
+  [data-testid="btnHomeRecomLoadMore"],
+  div.product div,
+  .prd_shop-rating-average-and-label span,
+  [data-testid="crdUOHContainer"] div,
+  [data-testid="crdUOHContainer"] span,
+  [data-testid="crdUOHContainer"] button,
+  [data-testid="compChatPage"] div,
+  [data-testid="compChatPage"] span,
+  [data-testid="compChatPage"] button,
+  [data-testid="btnHeaderCart"] > div:nth-child(2),
+  [data-testid="btnHeaderCart"] > div:nth-child(2) div,
+  [data-testid="btnHeaderCart"] > div:nth-child(2) img {
+    background: #222;
+  }
+  body,
+	html,
+	ul:not(:has(.tab)),
+	nav,
+	input,
+	textarea,
+	header > div,
+	/* 	#content div, */
+	[data-testid="divHomeRecomTab"] > div > div,
+	#__skipper div:nth-child(1),
+	#__skipper div:nth-child(2),
+	#__skipper > main,
+	#__skipper > main > section,
+	[data-unify="Modal"] img,
+	hr,
+	section > div,
+	[data-unify="Card"],
+	[data-unify="Button"],
+	[data-testid="megaMenuCategory"] div,
+	[data-testid="allCategories"] a,
+	[data-testid="divBasicLayout"],
+	[role="tablist"],
+	[data-testid="rootInboxReputation"] div,
+	[data-testid="rootInboxReputation"] button,
+	[data-testid="tblHomeDynamicIcon"] a,
+	[data-testid="sldrHomeDynamicIconLeft"],
+	[data-testid="sldrHomeDynamicIconRight"],
+	[data-testid="btnPrevPage"],
+	[data-testid="btnNextPage"],
+	.css-1nrevy2 a,
+	.SmN6QCP4AbBixrUfTJaxmw\=\=[data-n-show=true],
+	.SmN6QCP4AbBixrUfTJaxmw\=\=[data-n-show=true] div,
+	#pdpVariantContainer p,
+	#pdpVariantContainer div,
+	footer {
+    background: #222 !important;
+    background-color: #222 !important;
+  }
+  [data-testid="google-login"] {
+    background: #1b3966 !important;
+  }
+  button:not([data-testid="pdpBtnNormalPrimary"]):focus {
+    background: #002a17 !important;
+  }
+  ul {
+    background-color: #303030 !important;
+  }
+  ul li:not(.active) {
+    color: #aaa !important;
+  }
+  ul li:has(.active) {
+    color: #fff !important;
+  }
+  [data-testid="btn-submit"]:disabled,
+  [data-testid="btnVariantChipInactive"] button {
+    border-color: #444;
+    background-color: #303030 !important;
+  }
+  [data-testid="btnVariantChipActiveSelected"] button,
+  [data-testid="allCategories"] a:hover,
+  [data-testid="lnkHeaderRcntSearch"]:hover,
+  [data-testid="lnkHeaderPopularSearch"]:hover,
+  [data-testid="iconHeaderCart"]:hover,
+  [data-testid="btnHeaderNotification"]:hover > div,
+  [data-testid="btnHeaderNotification"] .bsrUSqeYg7ERANhvVBapsw\=\=,
+  [data-testid="btnHeaderInbox"]:hover > div,
+  [data-testid="btnHeaderMyshop"]:hover > div:nth-child(1),
+  [data-testid="btnHeaderMyProfile"]:hover > div:nth-child(1),
+  [data-unf="select-menu-item-btn"]:hover,
+  [data-testid="tblHomeDynamicIcon"] a:hover,
+  [data-testid="btnHomeRecomLoadMore"]:hover,
+  [data-testid="sldrHomeDynamicIconLeft"]:hover,
+  [data-testid="sldrHomeDynamicIconRight"]:hover,
+  [data-testid="pdpBtnNormalPrimary"],
+  [data-testid="pdpBtnNormalPrimary"] span,
+  .css-45ahp6:hover {
+    color: #fff !important;
+    background: #006f3c !important;
+  }
+  [role="dialog"] div {
+    background: #222;
+    border-radius: 8px;
+  }
+  [data-testid="btnHeaderCart"]:hover > div:nth-child(1) {
+    background: #006f3c !important;
+    border-radius: 4px;
+  }
+  input,
+  button,
+  [data-unf="select-menu-item-btn"]:hover p,
+  [data-testid="btnPDPFooterWishlist"] {
+    color: #fff !important;
+  }
+  div.video-container-desktop div,
+  button:not(:disabled):not([data-testid="pdpBtnNormalPrimary"]),
+  #review-feed article,
+  [data-testid="txtHeaderSearchBar"],
+  [data-testid="reviewSorting"] div,
+  [data-unify="Select"] div,
+  [data-testid="divTopCarousel"] div,
+  .css-s2gmip,
+  .css-1tkcdnt,
+  .css-nkhca2,
+  div.timestamp {
+    background: transparent !important;
+  }
+
+  /* Download App Tokopedia Page */
+  [alt="Tokopedia Mobile Apps"] {
+    filter: saturate(2) invert(100%) hue-rotate(175deg);
+  }
+  .css-vcvxdq {
+    background: #16251f;
+  }
+  .css-5smp8i,
+  .css-cxq3sz {
+    background: #222 !important;
+  }
+  .css-1pkp79f.loaded {
+    filter: saturate(8) hue-rotate(330deg);
+  }
+  .css-1axmvpk,
+  .css-bkanr {
+    z-index: 0;
+  }
+}
