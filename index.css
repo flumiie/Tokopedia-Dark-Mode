@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        1.0.0
+@version        1.0.1
 @description    Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -177,7 +177,29 @@
   div.timestamp {
     background: transparent !important;
   }
-
+  /* Chat */
+  [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=,
+  [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=
+    div,
+  [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=
+    span {
+    background: #006b3a;
+  }
+  /* Selected chat - chat selector */
+  [aria-label="Chat List Item"]:hover,
+  [aria-label="Chat List Item"]:hover div,
+  [aria-label="Chat List Item"]:hover span {
+    background: #06341f;
+  }
+  /* Seller chat bubble */
+  [aria-label="Chat Bubble Auto Reply"] div,
+  [aria-label="Chat Bubble Review"] div,
+  .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div,
+  .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div p,
+  .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div span {
+    color: black !important;
+    background: #00cf70 !important;
+  }
   /* Download App Tokopedia Page */
   [alt="Tokopedia Mobile Apps"] {
     filter: saturate(2) invert(100%) hue-rotate(175deg);
