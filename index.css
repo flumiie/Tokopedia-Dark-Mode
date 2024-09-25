@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        1.0.1
+@version        1.0.2
 @description    Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
-@-moz-document domain("tokopedia.com") {
+@-moz-document domain("www.tokopedia.com"), domain("tokopedia.com") {
   * {
     scrollbar-color: #006f3c transparent;
   }
@@ -28,6 +28,9 @@
   i,
   svg {
     filter: saturate(5) brightness(5) hue-rotate(45deg);
+  }
+  hr[data-n-large] {
+    border-top-width: 1px !important;
   }
   [data-unify="ProgressBar"] > div > div {
     background: #fff !important;
@@ -150,6 +153,7 @@
     color: #fff !important;
     background: #006f3c !important;
   }
+  #main-pdp-container div,
   [role="dialog"] div {
     background: #222;
     border-radius: 8px;
@@ -171,6 +175,8 @@
   [data-testid="reviewSorting"] div,
   [data-unify="Select"] div,
   [data-testid="divTopCarousel"] div,
+  [data-testid="topadsCPMWrapper"] div,
+  [data-testid="divSRPContentProducts"] div,
   .css-s2gmip,
   .css-1tkcdnt,
   .css-nkhca2,
@@ -199,6 +205,9 @@
   .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div span {
     color: black !important;
     background: #00cf70 !important;
+  }
+  .KxcwUCG6IJuifWI6-FToFA\=\= {
+    background: transparent !important;
   }
   /* Download App Tokopedia Page */
   [alt="Tokopedia Mobile Apps"] {
