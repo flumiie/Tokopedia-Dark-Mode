@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        1.0.2
+@version        1.0.3
 @description    Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -71,7 +71,8 @@
   [data-testid="compChatPage"] button,
   [data-testid="btnHeaderCart"] > div:nth-child(2),
   [data-testid="btnHeaderCart"] > div:nth-child(2) div,
-  [data-testid="btnHeaderCart"] > div:nth-child(2) img {
+  [data-testid="btnHeaderCart"] > div:nth-child(2) img,
+  [data-ssr="shopSSR"] div {
     background: #222;
   }
   body,
@@ -182,6 +183,9 @@
   .css-nkhca2,
   div.timestamp {
     background: transparent !important;
+  }
+  [data-testid="divImgProductOverlay"] {
+    background: initial !important;
   }
   /* Chat */
   [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=,
