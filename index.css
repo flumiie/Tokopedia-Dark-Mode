@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        1.0.5
+@version        1.0.5.1
 @description    Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -155,7 +155,7 @@
 		background: #006f3c !important
 	}
 	#main-pdp-container div,
-	[role="dialog"] div {
+	[role="dialog"] div:not(.css-q36kss) {
 		background: #222;
 		border-radius: 8px;
 	}
@@ -229,7 +229,13 @@
 	[aria-label="bubble option icon"] {
 		fill: black
 	}
-	/* Tracker Right content */
+	/* Shipping Tracker Popup */
+	[role="dialog"]:has(.css-18qem4c) {
+		height: 53%;
+	}
+	.css-jgltpa .leftContent {
+		align-self: center;
+	}
 	.css-jgltpa .rightContent {
 		background: transparent;
 	}
