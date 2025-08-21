@@ -1,81 +1,82 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        1.0.5.1
+@version        1.0.5.3
 @description    Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
-@-moz-document domain("www.tokopedia.com"), domain("tokopedia.com") {
-	* {
-		scrollbar-color: #006f3c transparent;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	span,
-	a,
-	div {
-		color: #DDD !important
-	}
-	a:hover,
-	button:hover p {
-		color: #03AC0E !important
-	}
-	i,
-	svg {
-		filter: saturate(5) brightness(5) hue-rotate(45deg)
-	}
-	hr[data-n-large] {
-		border-top-width: 1px !important
-	}
-	[data-unify="ProgressBar"] > div > div {
-		background: #FFF !important
-	}
-	[data-unify="ProgressBar"] [role="progressbar"] {
-		background: #03AC0E !important
-	}
-	#pdp_comp-review div:not([role="tooltip"]) > [class="unf-icon"],
-	#content-Rating [class="unf-icon"],
-	[title="jumlah rating"] [class="unf-icon"],
-	[data-testid="icnStarRating"] [class="unf-icon"] {
-		fill: #FFC400 !important;
-		filter: hue-rotate(0deg)
-	}
-	[data-unify="Modal"],
-	#header-main-wrapper,
-	#header-main-wrapper > div,
-	.e1v32nag0,
-	.css-ufaufa,
-	[data-testid="initialStateDropdown"],
-	[data-unify="Dropdown"],
-	[data-unify="Select"],
-	[data-unify="Footer"],
-	[data-testid="cartOverlayHeader"] div,
-	[data-testid="btnHeaderNotification"] div,
-	[data-testid="btnHeaderInbox"] div,
-	[data-testid="btnHeaderMyshop"] > div:nth-child(2),
-	[data-testid="btnHeaderMyProfile"] > div:nth-child(2) > div,
-	[data-testid="divPlaceholder"] div,
-	[data-testid="btnHomeRecomLoadMore"],
-	div.product div,
-	.prd_shop-rating-average-and-label span,
-	[data-testid="crdUOHContainer"] div,
-	[data-testid="crdUOHContainer"] span,
-	[data-testid="crdUOHContainer"] button,
-	[data-testid="compChatPage"] div,
-	[data-testid="compChatPage"] span,
-	[data-testid="compChatPage"] button,
-	[data-testid="btnHeaderCart"] > div:nth-child(2),
-	[data-testid="btnHeaderCart"] > div:nth-child(2) div,
-	[data-testid="btnHeaderCart"] > div:nth-child(2) img,
-	[data-ssr="shopSSR"] div {
-		background: #222
-	}
-	body,
+@-moz-document domain("www.tokopedia.com") {
+  * {
+    scrollbar-color: #006f3c transparent;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  div {
+    color: #ddd !important;
+  }
+  a:hover {
+    color: #03ac0e !important;
+  }
+  i,
+  svg {
+    filter: saturate(5) brightness(5) hue-rotate(45deg);
+  }
+  hr[data-n-large] {
+    border-top-width: 1px !important;
+  }
+  [data-unify="ProgressBar"] > div > div {
+    background: #fff !important;
+  }
+  [data-unify="ProgressBar"] [role="progressbar"] {
+    background: #03ac0e !important;
+  }
+  #pdp_comp-review div:not([role="tooltip"]) > [class="unf-icon"],
+  #content-Rating [class="unf-icon"],
+  [title="jumlah rating"] [class="unf-icon"],
+  [data-testid="icnStarRating"] [class="unf-icon"] {
+    filter: saturate(2);
+  }
+  [data-unify="Modal"],
+  #header-main-wrapper,
+  #header-main-wrapper > div,
+  .e1v32nag0,
+  .css-ufaufa,
+  [data-testid="initialStateDropdown"],
+  [data-unify="Dropdown"],
+  [data-unify="Select"],
+  [data-unify="Footer"],
+  [data-testid="cartOverlayHeader"] div,
+  [data-testid="btnHeaderNotification"] div,
+  [data-testid="btnHeaderInbox"] div,
+  [data-testid="btnHeaderMyshop"] > div:nth-child(2),
+  [data-testid="btnHeaderMyProfile"] > div:nth-child(2) > div,
+  [data-testid="divPlaceholder"] div,
+  [data-testid="btnHomeRecomLoadMore"],
+  div.product div,
+  .prd_shop-rating-average-and-label span,
+  [data-testid="crdUOHContainer"] div,
+  [data-testid="crdUOHContainer"] span,
+  [data-testid="crdUOHContainer"] button,
+  [data-testid="compChatPage"] div,
+  [data-testid="compChatPage"] span,
+  [data-testid="compChatPage"] button,
+  [data-testid="btnHeaderCart"] > div:nth-child(2),
+  [data-testid="btnHeaderCart"] > div:nth-child(2) div,
+  [data-testid="btnHeaderCart"] > div:nth-child(2) img,
+  [data-ssr="shopSSR"] div,
+  #pdpBuyerSubActions button,
+  #pdp_comp-review div,
+  .css-e95r5q-unf-accordion__header {
+    background: #222;
+  }
+  body,
 	html,
 	ul:not(:has(.tab)),
 	nav,
@@ -84,15 +85,17 @@
 	header > div,
 	/* 	#content div, */
 	[data-testid="divHomeRecomTab"] > div > div,
-	#__skipper div:nth-child(1),
-	#__skipper div:nth-child(2),
+	.Z5pv5a_NKshg9J2UQIDv > div,
+	/* 	top right popups */
+	.css-e4pb9k > div,
+	.css-vr0kmm > div,
+	/* etc */
 	#__skipper > main,
 	#__skipper > main > section,
 	[data-unify="Modal"] img,
 	hr,
 	section > div,
 	[data-unify="Card"],
-	[data-unify="Button"],
 	[data-testid="megaMenuCategory"] div,
 	[data-testid="allCategories"] a,
 	[data-testid="divBasicLayout"],
@@ -110,151 +113,239 @@
 	#pdpVariantContainer p,
 	#pdpVariantContainer div,
 	footer {
-		background: #222 !important;
-		background-color: #222 !important
-	}
-	[data-testid="google-login"] {
-		background: #1b3966 !important
-	}
-	button:not([data-testid="pdpBtnNormalPrimary"]):focus {
-		background: #002a17 !important
-	}
-	ul {
-		background-color: #303030 !important
-	}
-	ul li:not(.active) {
-		color: #AAA !important;
-	}
-	ul li:has(.active) {
-		color: #FFF !important;
-	}
-	[data-testid="btn-submit"]:disabled,
-	[data-testid="btnVariantChipInactive"] button {
-		border-color: #444;
-		background-color: #303030 !important
-	}
-	[data-testid="btnVariantChipActiveSelected"] button,
-	[data-testid="allCategories"] a:hover,
-	[data-testid="lnkHeaderRcntSearch"]:hover,
-	[data-testid="lnkHeaderPopularSearch"]:hover,
-	[data-testid="iconHeaderCart"]:hover,
-	[data-testid="btnHeaderNotification"]:hover > div,
-	[data-testid="btnHeaderNotification"] .bsrUSqeYg7ERANhvVBapsw\=\=,
-	[data-testid="btnHeaderInbox"]:hover > div,
-	[data-testid="btnHeaderMyshop"]:hover > div:nth-child(1),
-	[data-testid="btnHeaderMyProfile"]:hover > div:nth-child(1),
-	[data-unf="select-menu-item-btn"]:hover,
-	[data-testid="tblHomeDynamicIcon"] a:hover,
-	[data-testid="btnHomeRecomLoadMore"]:hover,
-	[data-testid="sldrHomeDynamicIconLeft"]:hover,
-	[data-testid="sldrHomeDynamicIconRight"]:hover,
-	[data-testid="pdpBtnNormalPrimary"],
-	[data-testid="pdpBtnNormalPrimary"] span,
-	.css-45ahp6:hover {
-		color: #FFF !important;
-		background: #006f3c !important
-	}
-	#main-pdp-container div,
-	[role="dialog"] div:not(.css-q36kss) {
-		background: #222;
-		border-radius: 8px;
-	}
-	[data-testid="btnHeaderCart"]:hover > div:nth-child(1) {
-		background: #006f3c !important;
-		border-radius: 4px;
-	}
-	input,
-	button,
-	[data-unf="select-menu-item-btn"]:hover p,
-	[data-testid="btnPDPFooterWishlist"] {
-		color: #FFF !important;
-	}
-	div.video-container-desktop div,
-	button:not(:disabled):not([data-testid="pdpBtnNormalPrimary"]),
-	#review-feed article,
-	[data-testid="txtHeaderSearchBar"],
-	[data-testid="reviewSorting"] div,
-	[data-unify="Select"] div,
-	[data-testid="divTopCarousel"] div,
-	[data-testid="topadsCPMWrapper"] div,
-	[data-testid="divSRPContentProducts"] div,
-	[data-testid="dSRPDltAllFilter"],
-	.css-s2gmip,
-	.css-1tkcdnt,
-	.css-nkhca2,
-	div.timestamp {
-		background: transparent !important
-	}
-	[data-testid="divImgProductOverlay"] {
-		background: initial !important;
-	}
-	/* Loading screen */
-	.css-kycqy6-unf-loader-jumper {
-		background: #222
-	}
-	/* Chat */
-	[aria-label="Chat List Item"],
-	[aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=,
-	[aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\= div,
-	[aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\= span,
-	.SqYkbSN7VfzMoweKTZX61w\=\=.m12MdLqMoZtLzFRwU3bzIg\=\= {
-		background: #006b3a;
-		background-color: #006b3a
-	}
-	/* Selected chat - chat selector */
-	[aria-label="Chat List Item"]:hover,
-	[aria-label="Chat List Item"]:hover div,
-	[aria-label="Chat List Item"]:hover span {
-		background: #06341f
-	}
-	/* Seller chat bubble */
-	[aria-label="Chat Bubble Auto Reply"],
-		[aria-label="Chat Bubble Auto Reply"] div,
-		[aria-label="Chat Bubble Auto Reply"] span,
-	[aria-label="Chat Bubble Review"],
-	[aria-label="Chat Bubble Review"] div,
-	[aria-label="Chat Bubble Review"] span,
-	.CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div,
-	.CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div p,
-	.CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div span {
-		color: black !important;
-		background: #00cf70 !important
-	}
-	.KxcwUCG6IJuifWI6-FToFA\=\= {
-		background: transparent !important
-	}
-	.AijM\+43faHBJ6gkgxZzlXA\=\= {
-		background: transparent !important
-	}
-	[aria-label="bubble option icon"] {
-		fill: black
-	}
-	/* Shipping Tracker Popup */
-	[role="dialog"]:has(.css-18qem4c) {
-		height: 53%;
-	}
-	.css-jgltpa .leftContent {
-		align-self: center;
-	}
-	.css-jgltpa .rightContent {
-		background: transparent;
-	}
-	/* Download App Tokopedia Page */
-	[alt="Tokopedia Mobile Apps"] {
-		filter: saturate(2) invert(100%) hue-rotate(175deg);
-	}
-	.css-vcvxdq {
-		background: #16251f
-	}
-	.css-5smp8i,
-	.css-cxq3sz {
-		background: #222 !important
-	}
-	.css-1pkp79f.loaded {
-		filter: saturate(8) hue-rotate(330deg);
-	}
-	.css-1axmvpk,
-	.css-bkanr {
-		z-index: 0;
-	}
+    background: #222 !important;
+    background-color: #222 !important;
+  }
+  /* 	main search box */
+  input {
+    color: #fff !important;
+  }
+  .SuQZX49PGc2y0Pq9b8v9 {
+    background: #222;
+  }
+  /* home page */
+  [data-testid="sldrTopCarouselProduct"] div {
+    background: #222;
+  }
+  /* 	top right stuffs */
+  .css-yjftma:hover,
+  .css-10j85ib:hover {
+    background: #444;
+    transition: all 0.1s ease;
+  }
+  .css-kfadhz {
+    box-shadow: none;
+  }
+  .css-li48ot {
+    background: transparent;
+  }
+  /* dropdowns */
+  .css-1lq8h54 div,
+  .css-6usonf div,
+  .css-1cnj54x div {
+    background: #222;
+  }
+  .css-1umlihb:hover,
+  .css-1umlihb:hover div,
+  .NafNYzU7tjmfBHBob7kY:hover,
+  .NafNYzU7tjmfBHBob7kY:hover div {
+    background: #444;
+  }
+  .css-tdlia4 {
+    background: transparent !important;
+  }
+  /* 	left side navigator */
+  .css-1933foh,
+  .css-1933foh div {
+    background: #222;
+    box-shadow: none;
+  }
+  .css-1p4fr0w:hover,
+  .css-1p4fr0w:hover div {
+    background: #444;
+  }
+  /* User review - Seller reply */
+  .css-10fmwfe {
+    background: transparent !important;
+  }
+  /* 	profile settings */
+  .css-kzgnqq,
+  .css-kzgnqq div {
+    background: #222;
+    background-color: #222;
+  }
+  .banner-text {
+    background-color: transparent !important;
+  }
+  /* product floating actions */
+  .css-10pxjrv-unf-btn {
+    background: #222;
+  }
+  button[aria-label="Kurangi 1"]:hover,
+  button[aria-label="Tambah 1"]:hover,
+  .css-10pxjrv-unf-btn:hover {
+    background: #06341f;
+  }
+  #pdpBuyerSubActions svg {
+    filter: invert(1);
+  }
+  #pdpBuyerSubActions button {
+    color: white;
+  }
+  /* product page */
+  button[data-testid="btnReportProduct"] {
+    color: white;
+  }
+  button[data-testid="btnPDPShopFollow"],
+  #pdp_comp-QRCode button,
+  button[data-testid="btnReportProduct"],
+  #pdp_comp-discussion_faq div,
+  #pdp_comp-discussion_faq button,
+  #pdp_comp-pdp_1 div,
+  #pdp_comp-pdp_2 div,
+  #pdp_comp-pdp_3 div,
+  #pdp_comp-pdp_4 div {
+    background: #222;
+  }
+  button[data-testid="btnPDPShopFollow"]:hover,
+  #pdp_comp-QRCode button:hover,
+  #pdp_comp-discussion_faq button:hover {
+    background: #06341f;
+  }
+  /* 	cart */
+  .css-hz28cl div {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  [data-testid="google-login"] {
+    background: #1b3966 !important;
+  }
+  button:not([data-testid="pdpBtnNormalPrimary"]):focus {
+    background: #002a17 !important;
+  }
+  ul {
+    background-color: #303030 !important;
+  }
+  ul li:not(.active) {
+    color: #aaa !important;
+  }
+  ul li:has(.active) {
+    color: #fff !important;
+  }
+  [data-testid="btn-submit"]:disabled,
+  [data-testid="btnVariantChipInactive"] button {
+    border-color: #444;
+    background-color: #303030 !important;
+  }
+  [data-testid="btnVariantChipActiveSelected"] button,
+  [data-testid="allCategories"] a:hover,
+  [data-testid="lnkHeaderRcntSearch"]:hover,
+  [data-testid="lnkHeaderPopularSearch"]:hover,
+  [data-testid="iconHeaderCart"]:hover,
+  [data-testid="btnHeaderNotification"]:hover > div,
+  [data-testid="btnHeaderNotification"] .bsrUSqeYg7ERANhvVBapsw\=\=,
+  [data-testid="btnHeaderInbox"]:hover > div,
+  [data-testid="btnHeaderMyshop"]:hover > div:nth-child(1),
+  [data-testid="btnHeaderMyProfile"]:hover > div:nth-child(1),
+  [data-unf="select-menu-item-btn"]:hover,
+  [data-testid="tblHomeDynamicIcon"] a:hover,
+  [data-testid="btnHomeRecomLoadMore"]:hover,
+  [data-testid="sldrHomeDynamicIconLeft"]:hover,
+  [data-testid="sldrHomeDynamicIconRight"]:hover,
+  [data-testid="topadsCPMWrapper"] div,
+  [data-testid="divSRPContentProducts"] div,
+  [data-testid="dSRPDltAllFilter"],
+  .css-s2gmip,
+  .css-1tkcdnt,
+  .css-nkhca2,
+  div.timestamp {
+    background: transparent !important;
+  }
+  [data-testid="divImgProductOverlay"] {
+    background: initial !important;
+  }
+  /* Loading screen */
+  .css-kycqy6-unf-loader-jumper {
+    background: #222;
+  }
+  /* Chat */
+  [aria-label="Chat List Item"]:has(.p9XrhbPq3H4np-PoOftA1w\=\=),
+  [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=,
+  [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=
+    div,
+  [aria-label="Chat List Item"].Nw1O5vcnRYXHAKOOduVXEg\=\=.s\+4l\+kGYgDNu6sqREz45kA\=\=
+    span,
+  .SqYkbSN7VfzMoweKTZX61w\=\=.m12MdLqMoZtLzFRwU3bzIg\=\= {
+    background: #006b3a;
+    background-color: #006b3a;
+  }
+  ._6Z8JsF7LwLK3dWe8LM2fUw\=\=,
+  .t7RqoBg5FlNg24sjyWiIfQ\=\=,
+  .zvtRvt0FXZYCGfBkpsR7Sw\=\=.Yfnmz5QOuBAAQ1i0q\+gPAQ\=\= {
+    background: #2f2f2f;
+  }
+  /* Selected chat - chat selector */
+  ._11f1OYQ1oUJhtxeDKmhQAA\=\=.p9XrhbPq3H4np-PoOftA1w\=\=,
+  ._11f1OYQ1oUJhtxeDKmhQAA\=\=.p9XrhbPq3H4np-PoOftA1w\=\= div,
+  ._11f1OYQ1oUJhtxeDKmhQAA\=\=.p9XrhbPq3H4np-PoOftA1w\=\= span,
+  .l30QwrzgAF1gV\+TBK0RKoA\=\=._95FzVyg5xnw6WyX6u3xTsg\=\= div,
+  [aria-label="Chat List Item"]:has(.p9XrhbPq3H4np-PoOftA1w\=\=),
+  [aria-label="Chat List Item"]:hover,
+  [aria-label="Chat List Item"]:hover div,
+  [aria-label="Chat List Item"]:hover span {
+    background: #06341f;
+    background-color: #06341f;
+  }
+  /* Seller chat bubble */
+  [aria-label="Chat Bubble Auto Reply"],
+  [aria-label="Chat Bubble Auto Reply"] div,
+  [aria-label="Chat Bubble Auto Reply"] span,
+  [aria-label="Chat Bubble Review"],
+  [aria-label="Chat Bubble Review"] div,
+  [aria-label="Chat Bubble Review"] span,
+  .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div,
+  .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div p,
+  .CQ3ZHZMocBczIGOirctwog\=\= .DFxuYojiUmRCrhSdF\+eFtQ\=\= > div span {
+    color: black !important;
+    background: #00cf70 !important;
+  }
+  .KxcwUCG6IJuifWI6-FToFA\=\= {
+    background: transparent !important;
+  }
+  .AijM\+43fahbj6gkgxzzlxa\=\= {
+    background: transparent !important;
+  }
+  [aria-label="bubble option icon"] {
+    fill: black;
+  }
+  /* 	Pop-up Chat */
+  .sQ9\+EfgxZ\+MTdvpcrlVAYw\=\= {
+    background: #222;
+  }
+  /* Shipping Tracker Popup */
+  .leftContent {
+    align-self: center;
+  }
+  .rightContent {
+    background-color: #222 !important;
+  }
+  /* Download App Tokopedia Page */
+  [alt="Tokopedia Mobile Apps"] {
+    filter: saturate(2) invert(100%) hue-rotate(175deg);
+  }
+  .css-vcvxdq {
+    background: #16251f;
+  }
+  .css-5smp8i,
+  .css-cxq3sz {
+    background: #222 !important;
+  }
+  .css-1pkp79f.loaded {
+    filter: saturate(8) hue-rotate(330deg);
+  }
+  .css-1axmvpk,
+  .css-bkanr {
+    z-index: 0;
+  }
 }
