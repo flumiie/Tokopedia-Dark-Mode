@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        1.0.5.4
+@version        1.0.5.5
 @description    Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -286,11 +286,17 @@
 	.DvUutzkFhy21Wskz87VWcg\=\=,
 	.DvUutzkFhy21Wskz87VWcg\=\= > *,
 	.Y0avfkwBGLGzXNfC0s3DQQ\=\=,
-	.oO0aXF-GOzin7ZnNgJABZA\=\=._9Y9YhvBv2zHqfUStur7ScQ\=\=,
-	.inI42E4Pxf497tLYB1yqqA\=\=,
 	.a\+dWQMQEAHdNKlSIU6\+LvQ\=\=.pIWmCx9yV1cDkFB8RpLnQQ\=\=,
 	.RDJ0Tw3We9Szx0TaiOy8yQ\=\=[data-n-variant=ghost] {
-		background: #2F2F2F !important;
+		background: #222 !important;
+	}
+	.inI42E4Pxf497tLYB1yqqA\=\=,
+	.oO0aXF-GOzin7ZnNgJABZA\=\=._9Y9YhvBv2zHqfUStur7ScQ\=\= {
+		background: #333
+	}
+	.inI42E4Pxf497tLYB1yqqA\=\=.G1NiQaDGLsP\+9THUa\+-aBw\=\= {
+		background: #006b3a;
+		border: inherit
 	}
 	.DvUutzkFhy21Wskz87VWcg\=\= textarea,
 	.DvUutzkFhy21Wskz87VWcg\=\= textarea::placeholder {
