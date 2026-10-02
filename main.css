@@ -1,0 +1,78 @@
+/* ==UserStyle==
+@name           Tokopedia Dark Mode
+@namespace      github.com/flumiie/Tokopedia-Dark-Mode
+@version        2.0.3
+@description    Universal Dark mode for Tokopedia.com
+@author         flumi
+==/UserStyle== */
+@-moz-document domain("tokopedia.com") {
+  /* Global Inversion */
+  html,
+  nav {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #f5f5f5; /* Reset base color for inverted rendering */
+  }
+
+  /* Counter-inversion for images and videos */
+  img,
+  video,
+  [data-testid="imgProduct"],
+  [data-testid="shop-avatar"],
+  ::-webkit-scrollbar {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  #sidebar * {
+    overflow: hidden;
+  }
+
+  [role="radiogroup"] * {
+    color: #000 !important;
+  }
+
+  [role="dialog"]:not([data-v="1ken3w"]) {
+    background-color: #000;
+    filter: invert(1) hue-rotate(180deg);
+  }
+  [role="dialog"] .p-modal-title {
+    color: #fff !important;
+  }
+  .p-modal-content > div > div {
+    color: #fff;
+    background: #000;
+  }
+  .p-option-content-title-text * {
+    color: #fff;
+  }
+
+  .order_id_number {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #009995;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: #ee4d2d;
+    color: #fff;
+  }
+}
+@-moz-document domain("seller-id.tokopedia.com") {
+  nav img {
+    filter: none;
+  }
+}
+@-moz-document url-prefix("https://seller-id.tokopedia.com/easesafe/oec_fulfillment_doc_tts")
+{
+  html {
+    filter: invert(0) !important;
+  }
+}
