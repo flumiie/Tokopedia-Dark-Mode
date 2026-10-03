@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        2.0.3
+@version        2.0.4
 @description    Universal Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -38,11 +38,9 @@
     color: #fff !important;
   }
   .p-modal-content > div > div {
-    color: #fff;
-    background: #000;
-  }
-  .p-option-content-title-text * {
-    color: #fff;
+    filter: invert(1) hue-rotate(180deg);
+    color: #000;
+    background: #fff !important;
   }
 
   .order_id_number {
