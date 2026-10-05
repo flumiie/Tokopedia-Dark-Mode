@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        2.0.4
+@version        2.0.6
 @description    Universal Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -34,7 +34,9 @@
     background-color: #000;
     filter: invert(1) hue-rotate(180deg);
   }
-  [role="dialog"] .p-modal-title {
+  .theme-arco-modal *,
+  [role="dialog"] .p-modal-title,
+  #___reactour [role="dialog"] * {
     color: #fff !important;
   }
   .p-modal-content > div > div {
@@ -45,6 +47,16 @@
 
   .order_id_number {
     filter: invert(1) hue-rotate(180deg);
+  }
+
+  [data-testid="chat.chatroom.message_card"] pre {
+    filter: invert(1) hue-rotate(180deg);
+    color: #fff;
+  }
+
+  #GEC-nav-bar,
+  .atlas-settings-sidebar {
+    filter: none;
   }
 
   ::-webkit-scrollbar {
