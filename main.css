@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        2.0.6
+@version        2.0.8
 @description    Universal Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -54,6 +54,9 @@
     color: #fff;
   }
 
+  [data-btm="c23675"] [role="dialog"],
+  [data-testid="PDPImageDetail"],
+  [alt="Thumbnail"],
   #GEC-nav-bar,
   .atlas-settings-sidebar {
     filter: none;
