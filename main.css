@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tokopedia Dark Mode
 @namespace      github.com/flumiie/Tokopedia-Dark-Mode
-@version        2.0.10
+@version        2.0.11
 @description    Universal Dark mode for Tokopedia.com
 @author         flumi
 ==/UserStyle== */
@@ -23,7 +23,9 @@
   }
 
   img,
-  video {
+  video,
+  [aria-label="Footer"],
+  .css-4qiheh nav {
     background: #000 !important;
   }
 
@@ -38,6 +40,7 @@
     background-color: #000;
     filter: invert(1) hue-rotate(180deg);
   }
+  [role="dialog"].p-drawer-wrapper,
   [role="dialog"].z-\[999\] {
     background: #00000000;
   }
@@ -68,7 +71,8 @@
   [data-testid="PDPImageDetail"],
   [alt="Thumbnail"],
   #GEC-nav-bar,
-  .atlas-settings-sidebar {
+  .atlas-settings-sidebar,
+  .css-4qiheh nav img {
     filter: none;
   }
 
